@@ -1,0 +1,45 @@
+body{
+    background-image: url(cloud.jpg) ;
+    background-size: cover;
+    min-height: 100vh;
+    animation: bgAnim 5s infinite;
+  }
+  
+  .bird{
+    width: 120px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    /* forawards */
+    animation: birdAnin 4s infinite;
+  }
+  
+  .bird img{
+    width: 100%;
+  }
+
+  @keyframes bgAnim {
+    0%{
+        background-position: 0 0 ;
+    }
+    100%{
+        background-position: 0 -200px ;
+    }
+  }
+
+  @keyframes birdAnin {
+    0%{
+      left: 0%;
+      transform: scale(10);
+    }
+    50%{
+      left: 20%;
+      top: 10%;
+      width: 300px;
+      transform: rotate(-10deg);
+  
+    }
+    100%{
+      left:100%;
+    }
+ 
